@@ -1,22 +1,27 @@
 package NODOS;
 
 public class profesor {
+int codigo;
 String nombre;
 String apellido;
-//falta meter materia dentro de profesor por que al ser otra clase toca crear clase enlazada a clase
+String perfil;
+materia mat,cabeza,aux2;
 
 profesor sig;
 profesor ant;
 
-
-public profesor(String Uno, String dos){
-	
+public profesor(){}
+public profesor(int code,String Uno, String dos,String tres){
 	
 	nombre=Uno;
 	apellido=dos;
-	sig= null;
-	ant=null;
-	
+	codigo=code;
+	perfil=tres;
+
+cabeza=null;
+mat=null;
+aux2=null;
 	
 }
+
 }
